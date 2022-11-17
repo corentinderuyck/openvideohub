@@ -1,0 +1,120 @@
+@media (max-width: 800px) {
+  	.video_load {
+		width: 95%;
+	}
+}
+
+@media (min-width: 800px) and (max-width: 1000px) {
+	.video_load {
+		width: 85%;
+	}
+}
+
+@media (min-width: 1000px) {
+	.video_load {
+		width: 70%;
+	}
+}
+
+body, html {
+	padding: 0px;
+	margin: 0px;
+}
+
+html {
+	background-color: rgb(20,20,20);
+}
+
+.center_load {
+	margin: 1em 0em 1em 0em;
+	padding: 0px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.video_item_load {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.title_video_load {
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: white;
+	margin: 0em 1em 0em 0em;
+}
+
+.description_video_load {
+	font-family: sans-serif;
+	font-size: 1em;
+	color: white;
+}
+
+.description_title {
+	font-family: sans-serif;
+	font-size: 1em;
+	color: white;
+	font-weight: bold;
+}
+
+.first_layer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1em;
+}
+
+
+.like_dont_like {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.like_button {
+	border-radius: 20px 0px 0px 20px;
+	padding: 0.5em 1em 0.5em 1em;
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	border: 0.5px rgb(20,20,20) solid;
+	margin: 0px;
+}
+
+.like_button:hover {
+	cursor: pointer;
+	background-color: rgb(80,80,80);
+}
+
+.dont_like_button {
+	border-radius: 0px 20px 20px 0px;
+	padding: 0.5em 1em 0.5em 1em;
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	border: 0.5px rgb(20,20,20) solid;
+	margin: 0px;
+}
+
+.dont_like_button:hover {
+	cursor: pointer;
+	background-color: rgb(80,80,80);
+}
+
+.second_layer {
+	display: flex;
+	flex-direction: row;
+}
+
+.number_views {
+	color: rgb(200,200,200);
+	font-family: sans-serif;
+	font-size: 0.8em;
+	margin: 0px;
+}
+
+
