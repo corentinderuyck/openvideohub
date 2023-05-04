@@ -2,6 +2,9 @@
 
 A video hosting website open source
 
+![alt tag](https://github.com/corederu/openvideohub/blob/main/drawing/1.png)
+
+![alt tag](https://github.com/corederu/openvideohub/blob/main/drawing/2.png)
 
 
 ## Installation
