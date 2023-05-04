@@ -16,6 +16,12 @@ if($id==1) {
 	$password_co = addslashes(htmlspecialchars($_POST["password"]));
 	$name = addslashes(htmlspecialchars($_POST["name"]));
 
+	//check if a valid email
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		header('Location: connection.php');
+  		exit();
+	}
+
 	try
 	{
 	$bdd = new PDO('mysql:host=localhost;dbname='.$bdd.';charset=utf8', $user, $password);
