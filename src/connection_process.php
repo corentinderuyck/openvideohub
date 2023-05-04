@@ -10,11 +10,17 @@ if($id == null or (intval($id) != 1 and intval($id) != 0)) {
   	exit();
 }
 
-//if registration
 if($id==1) {
-	$email = htmlspecialchars($_POST['email']);
-	$password_co = htmlspecialchars($_POST["password"]);
-	$name = htmlspecialchars($_POST["name"]);
+	//if registration
+	$email = addslashes(htmlspecialchars($_POST['email']));
+	$password_co = addslashes(htmlspecialchars($_POST["password"]));
+	$name = addslashes(htmlspecialchars($_POST["name"]));
+
+	//check if a valid email
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+		header('Location: connection.php');
+  		exit();
+	}
 
 	try
 	{
@@ -70,8 +76,9 @@ if($id==1) {
 	header('Location: /index.php');
   	exit();
 } else {
-	$email = htmlspecialchars($_POST['email']);
-	$password_co = htmlspecialchars($_POST["password"]);
+	//if connection
+	$email = addslashes(htmlspecialchars($_POST['email']));
+	$password_co = addslashes(htmlspecialchars($_POST["password"]));
 
 	try
 	{
