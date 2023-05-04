@@ -7,8 +7,8 @@ if(isset($_SESSION['id'])==false) {
   	exit();
 }
 
-$title_video = htmlspecialchars($_POST["title"]);
-$description_video = htmlspecialchars($_POST["description"]);
+$title_video = addslashes(htmlspecialchars($_POST["title"]));
+$description_video = addslashes(htmlspecialchars($_POST["description"]));
 
 try
 {
