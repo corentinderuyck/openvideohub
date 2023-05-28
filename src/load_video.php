@@ -19,7 +19,7 @@ require("../password.php");
 					$id = $_GET['id'];
 					try
 			    {
-			      $bdd = new PDO('mysql:host=localhost;dbname='.$bdd.';charset=utf8', $user, $password);
+			      $bdd = new PDO('mysql:host=localhost;dbname='.$bdd_name.';charset=utf8', $user, $password);
 			    }
 			    catch (Exception $e)
 			    {
