@@ -12,7 +12,7 @@ $description_video = addslashes(htmlspecialchars($_POST["description"]));
 
 try
 {
-$bdd = new PDO('mysql:host=localhost;dbname='.$bdd.';charset=utf8', $user, $password);
+$bdd = new PDO('mysql:host=localhost;dbname='.$bdd_name.';charset=utf8', $user, $password);
 }
 catch (Exception $e)
 {

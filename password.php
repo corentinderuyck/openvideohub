@@ -3,7 +3,7 @@
 		!! COMPLETE BEFORE SETUP.PHP
 		!! DELETE THE SETUP.PHP FILE AFTER RUN IT
 	*/
-	$user = "root";	//the username of the database
-	$password = "root";	//the password of the database
-	$bdd="video";	//the name of the database
+	$user = "";	//the username of the database
+	$password = "";	//the password of the database
+	$bdd="";	//the name of the database
 ?>
