@@ -5,5 +5,5 @@
 	*/
 	$user = "";	//the username of the database
 	$password = "";	//the password of the database
-	$bdd_name="";	//the name of the database
+	$bdd="";	//the name of the database
 ?>

@@ -7,6 +7,7 @@ $post_max_size = ini_get('post_max_size');
 $max_execution_time = ini_get('max_execution_time');
 $display_errors = ini_get('display_errors');
 $timezone = ini_get('date.timezone');
+$bdd_name = $bdd;
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname='.$bdd_name.';charset=utf8', $user, $password);
