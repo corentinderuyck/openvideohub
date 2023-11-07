@@ -2,7 +2,11 @@
 
 A video hosting website open source
 
+## Playing a video
+
 ![alt tag](https://github.com/corederu/openvideohub/blob/main/drawing/1.png)
+
+## Main Menu
 
 ![alt tag](https://github.com/corederu/openvideohub/blob/main/drawing/2.png)
 
